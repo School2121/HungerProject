@@ -20,6 +20,7 @@ main {
   padding: 2rem;
   max-width: 850px;
   margin: auto;
+  margin-top: 1rem; /* Optional space below navbar */
 }
 
 h1, h2 {
@@ -50,6 +51,8 @@ footer {
   background-color: #1a1a1a;
   padding: 0.5rem 1rem;
   border-bottom: 3px solid #ff944d;
+  position: relative;
+  z-index: 1000;
 }
 
 .navbar ul {
@@ -108,6 +111,11 @@ footer {
 }
 
 /* Image Banner */
+.banner {
+  position: relative;
+  z-index: 1;
+}
+
 .banner img {
   width: 100%;
   height: auto;
