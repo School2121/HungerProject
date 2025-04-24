@@ -20,7 +20,6 @@ main {
   padding: 2rem;
   max-width: 850px;
   margin: auto;
-  margin-top: 1rem; /* Optional space below navbar */
 }
 
 h1, h2 {
@@ -52,7 +51,7 @@ footer {
   padding: 0.5rem 1rem;
   border-bottom: 3px solid #ff944d;
   position: relative;
-  z-index: 1000;
+  z-index: 9999;
 }
 
 .navbar ul {
@@ -103,7 +102,7 @@ footer {
   box-shadow: 0 0 15px rgba(255, 204, 0, 0.6);
 }
 
-/* Random Fact */
+/* Random Fact Output */
 #fact-output {
   margin-top: 1rem;
   font-style: italic;
@@ -114,13 +113,13 @@ footer {
 .banner {
   position: relative;
   z-index: 1;
+  margin-top: 1rem;
 }
 
 .banner img {
   width: 100%;
   height: auto;
   border-radius: 10px;
-  margin-top: 1rem;
 }
 
 /* Call to Action Section */
@@ -155,7 +154,7 @@ footer {
   margin: 0.5rem 0;
 }
 
-/* Button inside CTA */
+/* CTA Button */
 .nav-button {
   display: inline-block;
   text-align: center;
@@ -173,4 +172,12 @@ footer {
   background-color: #e66e1f;
   transform: scale(1.05);
   box-shadow: 0 0 15px rgba(255, 204, 0, 0.4);
+}
+
+/* Quote Section */
+.quote-section blockquote {
+  font-style: italic;
+  color: #f0f0f0;
+  border-left: 4px solid #ff944d;
+  padding-left: 1rem;
 }
