@@ -1,0 +1,168 @@
+/* Base Styles */
+body {
+  margin: 0;
+  font-family: 'Segoe UI', sans-serif;
+  background-color: #121212;
+  color: #f4f4f4;
+  line-height: 1.7;
+}
+
+/* Header */
+header {
+  background-color: #ff944d;
+  color: white;
+  text-align: center;
+  padding: 2rem 1rem;
+  border-bottom: 4px solid #e66e1f;
+}
+
+main {
+  padding: 2rem;
+  max-width: 850px;
+  margin: auto;
+}
+
+h1, h2 {
+  margin-bottom: 0.6rem;
+}
+
+section {
+  margin-bottom: 2rem;
+}
+
+ul {
+  padding-left: 1.5rem;
+  list-style: disc;
+}
+
+/* Footer */
+footer {
+  text-align: center;
+  padding: 1rem;
+  background-color: #222;
+  font-size: 0.9rem;
+  color: #aaa;
+  margin-top: 2rem;
+}
+
+/* Navbar */
+.navbar {
+  background-color: #1a1a1a;
+  padding: 0.5rem 1rem;
+  border-bottom: 3px solid #ff944d;
+}
+
+.navbar ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+}
+
+.navbar li {
+  margin: 0;
+}
+
+.navbar a {
+  display: inline-block;
+  padding: 0.6rem 1.2rem;
+  color: white;
+  background-color: #ff944d;
+  text-decoration: none;
+  font-weight: bold;
+  border-radius: 6px;
+  transition: transform 0.2s ease, box-shadow 0.3s ease, background-color 0.3s ease;
+}
+
+.navbar a:hover {
+  background-color: #e66e1f;
+  transform: scale(1.05);
+  box-shadow: 0 0 12px rgba(255, 204, 0, 0.5);
+}
+
+/* General Buttons */
+.action-button {
+  background-color: #ff944d;
+  color: white;
+  border: none;
+  padding: 0.6rem 1.2rem;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 1rem;
+  transition: transform 0.2s ease, box-shadow 0.3s ease;
+}
+
+.action-button:hover {
+  background-color: #e66e1f;
+  transform: scale(1.05);
+  box-shadow: 0 0 15px rgba(255, 204, 0, 0.6);
+}
+
+/* Random Fact */
+#fact-output {
+  margin-top: 1rem;
+  font-style: italic;
+  color: #ddd;
+}
+
+/* Image Banner */
+.banner img {
+  width: 100%;
+  height: auto;
+  border-radius: 10px;
+  margin-top: 1rem;
+}
+
+/* Call to Action Section */
+.cta-section {
+  text-align: center;
+  background-color: #1f1f1f;
+  padding: 2rem;
+  border-radius: 10px;
+  margin-top: 2rem;
+}
+
+.cta-section h2 {
+  color: #ff944d;
+  margin-bottom: 1rem;
+}
+
+.cta-section p {
+  font-size: 1.1rem;
+  color: #ccc;
+  margin-bottom: 1.5rem;
+}
+
+.highlight-stats {
+  list-style: none;
+  padding: 0;
+  margin-bottom: 1.5rem;
+}
+
+.highlight-stats li {
+  color: #f4f4f4;
+  font-size: 1.1rem;
+  margin: 0.5rem 0;
+}
+
+/* Button inside CTA */
+.nav-button {
+  display: inline-block;
+  text-align: center;
+  padding: 0.7rem 1rem;
+  background-color: #ff944d;
+  color: white;
+  border-radius: 8px;
+  text-decoration: none;
+  font-weight: bold;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.15);
+  transition: transform 0.2s ease, background-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+.nav-button:hover {
+  background-color: #e66e1f;
+  transform: scale(1.05);
+  box-shadow: 0 0 15px rgba(255, 204, 0, 0.4);
+}
