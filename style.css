@@ -7,51 +7,15 @@ body {
   line-height: 1.7;
 }
 
-/* Header */
-header {
-  background-color: #ff944d;
-  color: white;
-  text-align: center;
-  padding: 2rem 1rem;
-  border-bottom: 4px solid #e66e1f;
-}
-
-main {
-  padding: 2rem;
-  max-width: 850px;
-  margin: auto;
-}
-
-h1, h2 {
-  margin-bottom: 0.6rem;
-}
-
-section {
-  margin-bottom: 2rem;
-}
-
-ul {
-  padding-left: 1.5rem;
-  list-style: disc;
-}
-
-/* Footer */
-footer {
-  text-align: center;
-  padding: 1rem;
-  background-color: #222;
-  font-size: 0.9rem;
-  color: #aaa;
-  margin-top: 2rem;
-}
-
-/* Navbar */
+/* Fixed Navbar */
 .navbar {
+  position: fixed;
+  top: 0;
+  width: 100%;
   background-color: #1a1a1a;
   padding: 0.5rem 1rem;
   border-bottom: 3px solid #ff944d;
-  position: relative;
-  z-index: 9999;
+  z-index: 1000;
 }
 
 .navbar ul {
@@ -84,6 +48,36 @@ footer {
   box-shadow: 0 0 12px rgba(255, 204, 0, 0.5);
 }
 
+/* Push down main content to avoid overlap with fixed nav */
+main {
+  padding: 5rem 2rem 2rem;
+  max-width: 850px;
+  margin: auto;
+}
+
+h1, h2 {
+  margin-bottom: 0.6rem;
+}
+
+section {
+  margin-bottom: 2rem;
+}
+
+ul {
+  padding-left: 1.5rem;
+  list-style: disc;
+}
+
+/* Footer */
+footer {
+  text-align: center;
+  padding: 1rem;
+  background-color: #222;
+  font-size: 0.9rem;
+  color: #aaa;
+  margin-top: 2rem;
+}
+
 /* General Buttons */
 .action-button {
   background-color: #ff944d;
@@ -102,24 +96,11 @@ footer {
   box-shadow: 0 0 15px rgba(255, 204, 0, 0.6);
 }
 
-/* Random Fact Output */
+/* Random Fact */
 #fact-output {
   margin-top: 1rem;
   font-style: italic;
   color: #ddd;
-}
-
-/* Image Banner */
-.banner {
-  position: relative;
-  z-index: 1;
-  margin-top: 1rem;
-}
-
-.banner img {
-  width: 100%;
-  height: auto;
-  border-radius: 10px;
 }
 
 /* Call to Action Section */
@@ -154,7 +135,7 @@ footer {
   margin: 0.5rem 0;
 }
 
-/* CTA Button */
+/* Button inside CTA */
 .nav-button {
   display: inline-block;
   text-align: center;
@@ -172,12 +153,4 @@ footer {
   background-color: #e66e1f;
   transform: scale(1.05);
   box-shadow: 0 0 15px rgba(255, 204, 0, 0.4);
-}
-
-/* Quote Section */
-.quote-section blockquote {
-  font-style: italic;
-  color: #f0f0f0;
-  border-left: 4px solid #ff944d;
-  padding-left: 1rem;
 }
