@@ -5,12 +5,12 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <title>End World Hunger</title>
   <link rel="stylesheet" href="style.css" />
-  <link rel="stylesheet" href="https://unpkg.com/aos@2.3.1/dist/aos.css"/>
+  <link rel="stylesheet" href="https://unpkg.com/aos@2.3.1/dist/aos.css" />
 </head>
 <body>
 
   <!-- Navigation Bar -->
-  <nav>
+  <nav class="navbar">
     <ul>
       <li><a href="index.html">Home</a></li>
       <li><a href="facts.html">Facts</a></li>
@@ -30,7 +30,7 @@
   <main>
 
     <!-- Call to Action Section -->
-    <section data-aos="fade-up" class="cta-section">
+    <section data-aos="fade-up" class="cta-section" id="why-this-matters">
       <h2>Why This Matters</h2>
       <p>Every day, millions of people go without food. It's not just numbers—it's real lives. We have the power to change that.</p>
 
@@ -44,13 +44,13 @@
     </section>
 
     <!-- Impact Story Section -->
-    <section data-aos="fade-up" class="impact-story">
+    <section data-aos="fade-up" class="impact-story" id="impact-story">
       <h2>Impact Story: Maria’s Journey</h2>
       <p>Maria, a 6-year-old girl from Somalia, was once severely malnourished. After receiving food aid and care, she is now a healthy, thriving child. With continued global efforts, more children like Maria can have access to the nutrition they need to survive and thrive.</p>
     </section>
 
     <!-- What You Can Do Section -->
-    <section data-aos="fade-up" class="ways-help">
+    <section data-aos="fade-up" class="ways-help" id="ways-help">
       <h2>What You Can Do</h2>
       <p>It doesn't take much to make a huge difference. Here are some simple ways you can help:</p>
       <ul>
@@ -98,9 +98,7 @@
   <!-- Scripts -->
   <script src="homepage.js"></script>
   <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
-  <script>
-    AOS.init();
-  </script>
+  <script>AOS.init();</script>
 
 </body>
 </html>
