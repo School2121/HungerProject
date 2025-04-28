@@ -5,6 +5,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Hunger Awareness - Home</title>
     <link rel="stylesheet" href="style.css">
+    <!-- Include AOS Scroll Animation -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
 </head>
 <body>
     <!-- Navigation Bar -->
@@ -19,19 +21,19 @@
     </nav>
 
     <!-- Hero Section -->
-    <header id="home" class="hero">
+    <header id="home" class="hero" data-aos="fade-up">
         <h1>🌍 Join the Fight Against Hunger</h1>
         <p>Every action counts in ending hunger worldwide. Be the change! 💪</p>
     </header>
 
     <!-- About Section -->
-    <section id="about" class="about">
+    <section id="about" class="about" data-aos="fade-up">
         <h2>What is Hunger Awareness?</h2>
         <p>Hunger is a global issue affecting millions of lives. We're working to raise awareness and end this crisis. Learn more about the causes and solutions.</p>
     </section>
 
     <!-- Facts Section -->
-    <section id="facts" class="facts">
+    <section id="facts" class="facts" data-aos="fade-up">
         <h2>Shocking Hunger Statistics</h2>
         <div id="fact-generator">
             <p id="random-fact">Loading a fact...</p>
@@ -40,20 +42,20 @@
     </section>
 
     <!-- Take Action Section -->
-    <section id="take-action" class="action">
+    <section id="take-action" class="action" data-aos="fade-up">
         <h2>How You Can Help</h2>
         <p>By donating, volunteering, and spreading awareness, we can fight hunger together!</p>
     </section>
 
     <!-- Donate Section -->
-    <section id="donate" class="donate">
+    <section id="donate" class="donate" data-aos="fade-up">
         <h2>Donate to Help Fight Hunger</h2>
         <p>Your contributions go towards feeding those in need and supporting sustainable solutions.</p>
         <button class="cta-button">Donate Now</button>
     </section>
 
     <!-- Random Quote Section -->
-    <section class="quote-section">
+    <section class="quote-section" data-aos="fade-up">
         <h2>Motivational Quote</h2>
         <p id="quote">Loading a quote...</p>
         <button onclick="showRandomQuote()">Show New Quote</button>
@@ -65,5 +67,11 @@
     </footer>
 
     <script src="script.js"></script>
+    <!-- AOS Scroll Animation JS -->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        // Initialize AOS for scroll animations
+        AOS.init();
+    </script>
 </body>
 </html>
