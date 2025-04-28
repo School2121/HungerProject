@@ -1,96 +1,102 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Hunger Awareness - Home</title>
-  <link rel="stylesheet" href="style.css" />
-  <link href="https://unpkg.com/aos@2.3.4/dist/aos.css" rel="stylesheet" />
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hunger Awareness - Home</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
+    <!-- Navigation Bar -->
+    <nav>
+        <ul>
+            <li><a href="#home">Home</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#facts">Facts</a></li>
+            <li><a href="#take-action">Take Action</a></li>
+            <li><a href="#donate">Donate</a></li>
+            <li><a href="#quiz">Quiz</a></li> <!-- Added Quiz Link -->
+        </ul>
+    </nav>
 
-<!-- Navigation Bar -->
-<nav>
-  <ul>
-    <li><a href="#home">Home</a></li>
-    <li><a href="#about">About</a></li>
-    <li><a href="#facts">Facts</a></li>
-    <li><a href="#take-action">Take Action</a></li>
-    <li><a href="#donate">Donate</a></li>
-  </ul>
-</nav>
+    <!-- Hero Section -->
+    <header id="home" class="hero">
+        <h1>🌍 Join the Fight Against Hunger</h1>
+        <p>Every action counts in ending hunger worldwide. Be the change! 💪</p>
+    </header>
 
-<!-- Hero Section -->
-<header id="home" class="hero" data-aos="fade-up">
-  <h1>🌍 Join the Fight Against Hunger</h1>
-  <p>Every action counts in ending hunger worldwide. Be the change! 💪</p>
-</header>
+    <!-- About Section -->
+    <section id="about" class="about">
+        <h2>What is Hunger Awareness?</h2>
+        <p>Hunger is a global issue affecting millions of lives. We're working to raise awareness and end this crisis. Learn more about the causes and solutions.</p>
+    </section>
 
-<!-- About Section -->
-<section id="about" class="section" data-aos="fade-up">
-  <h2>What is Hunger Awareness?</h2>
-  <p>Hunger is a global issue affecting millions of lives. We're working to raise awareness and end this crisis. Learn more about the causes and solutions.</p>
-</section>
+    <!-- Facts Section -->
+    <section id="facts" class="facts">
+        <h2>Shocking Hunger Statistics</h2>
+        <ul>
+            <li>Over 800 million people suffer from hunger every night.</li>
+            <li>1 in 9 people globally experience hunger.</li>
+            <li>Children under 5 are the most vulnerable to malnutrition.</li>
+            <li>A staggering number of people in developed nations still live in food insecurity.</li>
+            <li>The world produces enough food to feed the global population, yet hunger persists.</li>
+        </ul>
 
-<!-- Facts Section -->
-<section id="facts" class="section" data-aos="fade-up">
-  <h2>Shocking Hunger Statistics</h2>
-  <ul class="facts-list">
-    <li>🍽️ 1 in 9 people globally suffer from hunger.</li>
-    <li>🌎 Hunger kills more people every year than AIDS, malaria, and tuberculosis combined.</li>
-    <li>🥗 The world produces enough food to feed everyone, yet millions go hungry.</li>
-    <li>👶 Children under 5 are the most vulnerable to malnutrition.</li>
-  </ul>
+        <div id="fact-generator" style="margin-top: 20px;">
+            <p><strong>Did you know...?</strong></p>
+            <p id="random-fact" style="font-size: 1.5em; color: #ffcc00;">Click to get a fact!</p>
+            <button onclick="generateFact()">Click to get a fact</button>
+        </div>
+    </section>
 
-  <div class="fact-generator">
-    <h3>Did you know?</h3>
-    <p>Click the button to discover more facts!</p>
-    <p id="random-fact">Click below for a fact!</p>
-    <button onclick="generateFact()" class="fact-button">Show New Fact</button>
-  </div>
-</section>
+    <!-- Take Action Section -->
+    <section id="take-action" class="action">
+        <h2>How You Can Help</h2>
+        <p>By donating, volunteering, and spreading awareness, we can fight hunger together!</p>
+    </section>
 
-<!-- Take Action Section -->
-<section id="take-action" class="section action-section" data-aos="fade-up">
-  <h2>How You Can Help</h2>
-  <div class="action-container">
-    <div class="action-column">
-      <h3>Volunteer At:</h3>
-      <p>Help pack meals and support events:</p>
-      <a href="https://www.fmsc.org/" target="_blank" class="action-link">Feed My Starving Children</a><br>
-      <a href="https://www.feedingamerica.org/" target="_blank" class="action-link">Feeding America</a><br>
-      <a href="https://www.actionagainsthunger.org/" target="_blank" class="action-link">Action Against Hunger</a>
-    </div>
+    <!-- Donate Section -->
+    <section id="donate" class="donate">
+        <h2>Donate to Help Fight Hunger</h2>
+        <p>Your contributions go towards feeding those in need and supporting sustainable solutions.</p>
+        <button class="cta-button">Donate Now</button>
+    </section>
 
-    <div class="action-column">
-      <h3>Donate To:</h3>
-      <p>Support global hunger solutions:</p>
-      <a href="https://www.thehungerproject.org/" target="_blank" class="action-link">The Hunger Project</a><br>
-      <a href="https://www.worldfoodprogram.org/" target="_blank" class="action-link">World Food Programme</a><br>
-      <a href="https://riseagainsthunger.org/" target="_blank" class="action-link">Rise Against Hunger</a>
-    </div>
-  </div>
-</section>
+    <!-- Charities and Partners Section -->
+    <section id="partners">
+        <h2>Charities and Food Partners</h2>
+        <p>Here are some amazing organizations working towards ending hunger:</p>
+        <ul>
+            <li><a href="https://www.feedingamerica.org" target="_blank" style="text-decoration: underline; color: #ffcc00;">Feeding America</a></li>
+            <li><a href="https://www.wfp.org" target="_blank" style="text-decoration: underline; color: #ffcc00;">World Food Programme</a></li>
+            <li><a href="https://www.fmsc.org" target="_blank" style="text-decoration: underline; color: #ffcc00;">Feed My Starving Children</a></li>
+            <li><a href="https://www.actionagainsthunger.org" target="_blank" style="text-decoration: underline; color: #ffcc00;">Action Against Hunger</a></li>
+            <li><a href="https://www.worldvision.org" target="_blank" style="text-decoration: underline; color: #ffcc00;">World Vision</a></li>
+        </ul>
+    </section>
 
-<!-- Donate Section -->
-<section id="donate" class="section donate-section" data-aos="fade-up">
-  <h2>Donate to Help Fight Hunger</h2>
-  <p>Your contributions go towards feeding those in need and supporting sustainable solutions.</p>
-  <a href="https://www.thehungerproject.org/donate/" target="_blank" class="cta-button">Donate Now</a>
-</section>
+    <!-- Random Quote Section -->
+    <section class="quote-section">
+        <h2>Motivational Quote</h2>
+        <p id="quote">Loading a quote...</p>
+        <button onclick="showRandomQuote()">Show New Quote</button>
+    </section>
 
-<!-- Footer -->
-<footer>
-  <p>&copy; 2025 Hunger Awareness. All rights reserved.</p>
-</footer>
+    <!-- Quiz Section -->
+    <section id="quiz" class="quiz-section">
+        <h2>Test Your Knowledge</h2>
+        <div id="quiz-container">
+            <h3 id="question">Question text will appear here</h3>
+            <div id="answer-buttons" class="answer-buttons"></div>
+            <button id="next-btn" class="next-btn">Next</button>
+        </div>
+    </section>
 
-<script src="homepage.js"></script>
-<script src="https://unpkg.com/aos@2.3.4/dist/aos.js"></script>
-<script>
-  AOS.init({
-    duration: 1000, 
-    once: true,     
-  });
-</script>
+    <!-- Footer -->
+    <footer>
+        <p>&copy; 2025 Hunger Awareness. All rights reserved.</p>
+    </footer>
+
+    <script src="homepage.js"></script>
 </body>
 </html>
