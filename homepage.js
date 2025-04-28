@@ -1,3 +1,14 @@
+// Smooth Scroll for navigation links
+document.querySelectorAll('.scroll-link').forEach(anchor => {
+  anchor.addEventListener('click', function (e) {
+    e.preventDefault();
+
+    document.querySelector(this.getAttribute('href')).scrollIntoView({
+      behavior: 'smooth'
+    });
+  });
+});
+
 // Random Quote Generator
 const quotes = [
   "Every action counts. 🌟",
@@ -42,19 +53,3 @@ function generateFact() {
 
 // Run when page loads
 window.addEventListener('load', showRandomQuote);
-
-// Intersection Observer to trigger the fade-in effect when sections come into view
-const fadeInElements = document.querySelectorAll('.fade-in');
-
-const observer = new IntersectionObserver((entries) => {
-    entries.forEach(entry => {
-        if (entry.isIntersecting) {
-            entry.target.classList.add('visible');
-        }
-    });
-}, {
-    threshold: 0.5
-});
-
-// Observe all the fade-in elements
-fadeInElements.forEach(element => observer.observe(element));
