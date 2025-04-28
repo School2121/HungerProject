@@ -1,151 +1,214 @@
 /* General Styles */
-html {
-  scroll-behavior: smooth;
-}
-
 body {
-  font-family: Arial, sans-serif;
-  background-color: #121212;
-  color: #fff;
-  margin: 0;
-  padding: 0;
-  text-align: center;
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    line-height: 1.6;
+    background-color: #f5f5f5;
+    color: #333;
 }
 
+h1, h2, h3 {
+    color: #222;
+}
+
+section {
+    padding: 60px 20px;
+    text-align: center;
+}
+
+ul {
+    list-style: none;
+    padding: 0;
+}
+
+/* Navigation Bar */
 nav {
-  background: #1e1e1e;
-  padding: 15px;
-  position: sticky;
-  top: 0;
-  width: 100%;
-  z-index: 100;
+    background-color: #333;
+    padding: 10px 0;
 }
 
 nav ul {
-  list-style: none;
-  display: flex;
-  justify-content: center;
-  gap: 25px;
-  padding: 0;
+    display: flex;
+    justify-content: center;
 }
 
 nav ul li {
-  display: inline-block;
+    margin: 0 15px;
 }
 
 nav ul li a {
-  text-decoration: none;
-  color: white;
-  font-size: 18px;
-  font-weight: bold;
-  padding: 12px 20px;
-  border-radius: 8px;
-  background: linear-gradient(135deg, #ff6600, #ffcc00);
-  transition: all 0.3s ease-in-out;
-  display: inline-block;
+    color: white;
+    text-decoration: none;
+    font-size: 18px;
 }
 
 nav ul li a:hover {
-  background: linear-gradient(135deg, #ffcc00, #ff6600);
-  transform: translateY(-3px);
-}
-
-.section {
-  padding: 60px 20px;
+    color: #ffcc00;
 }
 
 /* Hero Section */
 .hero {
-  background: #ff6600;
-  padding: 40px 20px;
-  text-shadow: 0 0 10px rgba(255, 255, 255, 0.8);
+    background: url('https://images.unsplash.com/photo-1584713380381-448344c855b8?ixlib=rb-4.0.3&auto=format&fit=crop&w=1950&q=80') no-repeat center center/cover;
+    color: white;
+    padding: 100px 20px;
 }
 
-/* Facts Section */
-.facts-list {
-  list-style-type: none;
-  padding: 0;
-  margin-bottom: 40px;
+.hero h1 {
+    font-size: 3rem;
 }
 
-.facts-list li {
-  margin: 10px 0;
-  font-size: 1.2em;
+.hero p {
+    font-size: 1.5rem;
 }
 
-/* Fact Generator */
-.fact-generator {
-  background: #1e1e1e;
-  padding: 30px;
-  border-radius: 12px;
-  margin-top: 20px;
-  box-shadow: 0 4px 12px rgba(255, 255, 255, 0.1);
+/* About, Facts, Action, Donate Sections */
+.about, .facts, .action, .donate, #partners, .quote-section {
+    background-color: white;
+    margin-bottom: 20px;
+    border-radius: 10px;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.1);
 }
 
-.fact-button {
-  margin-top: 10px;
-  padding: 10px 20px;
-  font-size: 1.1em;
-  background: #ffcc00;
-  color: #1a1a1a;
-  border: none;
-  border-radius: 8px;
-  cursor: pointer;
-  font-weight: bold;
+/* Buttons */
+button, .cta-button {
+    background-color: #ffcc00;
+    border: none;
+    padding: 12px 24px;
+    margin-top: 15px;
+    font-size: 16px;
+    cursor: pointer;
+    border-radius: 5px;
+    transition: background-color 0.3s;
 }
 
-.fact-button:hover {
-  background: #ffaa00;
+button:hover, .cta-button:hover {
+    background-color: #e6b800;
 }
 
-/* Action Section */
-.action-container {
-  display: flex;
-  justify-content: center;
-  flex-wrap: wrap;
-  gap: 50px;
+/* Partners Links */
+#partners a {
+    color: #ffcc00;
+    text-decoration: underline;
 }
 
-.action-column {
-  flex: 1;
-  min-width: 250px;
-}
-
-.action-link {
-  display: block;
-  color: #ffcc00;
-  font-size: 1.1em;
-  margin: 8px 0;
-  text-decoration: underline;
-  transition: color 0.3s;
-}
-
-.action-link:hover {
-  color: #ffffff;
-}
-
-/* Donate Button */
-.cta-button {
-  background: linear-gradient(135deg, #ffcc00, #ff6600);
-  color: #1a1a1a;
-  font-weight: bold;
-  padding: 12px 30px;
-  border-radius: 8px;
-  font-size: 1.2em;
-  text-decoration: none;
-  display: inline-block;
-  transition: transform 0.3s, box-shadow 0.3s;
-}
-
-.cta-button:hover {
-  transform: scale(1.05);
-  box-shadow: 0 0 15px rgba(255, 204, 0, 0.6);
+#partners a:hover {
+    color: #e6b800;
 }
 
 /* Footer */
 footer {
-  background-color: #1e1e1e;
-  padding: 15px;
-  font-size: 0.9em;
-  color: #aaa;
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 15px 0;
+}
+
+/* Quote Section */
+.quote-section p {
+    font-size: 1.3rem;
+    margin: 10px 0;
+}
+
+/* Fact Generator */
+#fact-generator button {
+    margin-top: 10px;
+}
+
+/* ================== */
+/* QUIZ STYLES BELOW! */
+/* ================== */
+
+.quiz-section {
+    background-color: white;
+    margin: 40px auto;
+    max-width: 700px;
+    padding: 40px 20px;
+    border-radius: 12px;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+}
+
+#quiz-container {
+    margin-top: 20px;
+}
+
+#question {
+    font-size: 1.5rem;
+    margin-bottom: 20px;
+}
+
+.answer-buttons {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.answer-buttons .btn {
+    padding: 12px 20px;
+    background-color: #eee;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    font-size: 16px;
+    transition: background-color 0.3s, transform 0.2s;
+}
+
+.answer-buttons .btn:hover {
+    background-color: #ddd;
+    transform: translateY(-2px);
+}
+
+/* Correct and Wrong Answers */
+.correct {
+    background-color: #4CAF50 !important; /* Green */
+    color: white;
+}
+
+.wrong {
+    background-color: #f44336 !important; /* Red */
+    color: white;
+}
+
+/* Next Button */
+#next-btn {
+    margin-top: 30px;
+    display: none;
+    background-color: #ffcc00;
+    padding: 12px 24px;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    font-size: 18px;
+    transition: background-color 0.3s;
+}
+
+#next-btn:hover {
+    background-color: #e6b800;
+}
+
+/* Fade Animation (Optional for sections) */
+.fade-in {
+    opacity: 1;
+    transform: translateY(0);
+    transition: opacity 0.6s ease-out, transform 0.6s ease-out;
+}
+
+.section {
+    opacity: 0;
+    transform: translateY(50px);
+}
+
+/* Mobile Friendly */
+@media (max-width: 768px) {
+    nav ul {
+        flex-direction: column;
+    }
+
+    .hero h1 {
+        font-size: 2rem;
+    }
+
+    .hero p {
+        font-size: 1rem;
+    }
 }
