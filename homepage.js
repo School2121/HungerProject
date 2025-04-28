@@ -1,13 +1,4 @@
-// Smooth Scroll for navigation links
-document.querySelectorAll('.scroll-link').forEach(anchor => {
-  anchor.addEventListener('click', function (e) {
-    e.preventDefault();
-
-    document.querySelector(this.getAttribute('href')).scrollIntoView({
-      behavior: 'smooth'
-    });
-  });
-});
+// homepage.js
 
 // Random Quote Generator
 const quotes = [
@@ -22,18 +13,8 @@ const quotes = [
 
 function showRandomQuote() {
   const quoteElement = document.getElementById('quote');
-  
-  // Remove the existing fade-in animation by resetting the class
-  quoteElement.classList.remove('fade');
-  
-  // Trigger reflow to reset animation
-  void quoteElement.offsetWidth;
-
   const randomIndex = Math.floor(Math.random() * quotes.length);
   quoteElement.textContent = quotes[randomIndex];
-
-  // Add the fade class to trigger the animation
-  quoteElement.classList.add('fade');
 }
 
 // Random Fact Generator
@@ -51,5 +32,5 @@ function generateFact() {
   factElement.textContent = facts[randomFactIndex];
 }
 
-// Run when page loads
+// Run on page load
 window.addEventListener('load', showRandomQuote);
