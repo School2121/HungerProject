@@ -25,5 +25,20 @@ function showRandomQuote() {
   quoteElement.classList.add('fade');
 }
 
+// Random Fact Generator
+const facts = [
+  "Over 800 million people suffer from hunger every night.",
+  "1 in 9 people globally experience hunger.",
+  "Children under 5 are the most vulnerable to malnutrition.",
+  "A staggering number of people in developed nations still live in food insecurity.",
+  "The world produces enough food to feed the global population, yet hunger persists."
+];
+
+function generateFact() {
+  const factElement = document.getElementById('random-fact');
+  const randomFactIndex = Math.floor(Math.random() * facts.length);
+  factElement.textContent = facts[randomFactIndex];
+}
+
 // Run when page loads
 window.addEventListener('load', showRandomQuote);
