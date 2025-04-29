@@ -1,197 +1,204 @@
-/* General Styles */
-body {
+/* Reset */
+* {
   margin: 0;
-  font-family: 'Poppins', sans-serif;
-  background: #0b0c28;
-  color: #fff;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
   scroll-behavior: smooth;
 }
 
-.section {
-  padding: 80px 20px;
-  max-width: 1200px;
-  margin: auto;
+body {
+  font-family: 'Poppins', sans-serif;
+  line-height: 1.6;
+  background-color: #fefefe;
+  color: #333;
 }
 
-/* Navbar */
+/* Navigation */
 nav {
-  background: #0b0c28;
-  padding: 10px 0;
   position: fixed;
   width: 100%;
+  background-color: #fff;
   top: 0;
+  left: 0;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.1);
   z-index: 1000;
 }
 
 nav ul {
   display: flex;
   justify-content: center;
-  gap: 30px;
+  padding: 1rem;
   list-style: none;
-  margin: 0;
-  padding: 0;
+}
+
+nav ul li {
+  margin: 0 15px;
 }
 
 nav ul li a {
-  color: #ffcc00;
   text-decoration: none;
-  font-weight: bold;
+  color: #333;
+  font-weight: 600;
   transition: color 0.3s;
 }
 
 nav ul li a:hover {
-  color: #ffe135;
-}
-
-/* Hero */
-.hero {
-  text-align: center;
-  margin-top: 80px;
-}
-
-.hero h1 {
-  font-size: 3rem;
   color: #ffcc00;
 }
 
-/* About */
-.about {
+/* Sections */
+.section {
+  padding: 100px 20px 50px;
   text-align: center;
 }
 
-/* Facts */
-.facts ul {
+.hero {
+  background: linear-gradient(to right, #ffcc00, #ff6b6b);
+  color: white;
+  padding-top: 120px;
+}
+
+.about, .facts, .action, .donate, .quote-section, .quiz-section {
+  background: #fff;
+  margin-top: 20px;
+}
+
+h1, h2 {
+  margin-bottom: 20px;
+}
+
+ul {
   list-style: none;
   padding: 0;
 }
 
-.facts li {
-  padding: 10px 0;
+ul li {
+  margin: 10px 0;
 }
 
-/* Buttons (Moon Burger Style) */
-.moonburger-button {
-  background: linear-gradient(135deg, #ffcc00, #ffd700);
-  color: #0b0c28;
-  padding: 15px 30px;
-  border: none;
-  border-radius: 50px;
-  font-size: 1.3em;
-  font-weight: bold;
-  box-shadow: 0 0 20px #ffcc00, 0 0 40px #ffcc00;
-  cursor: pointer;
-  transition: all 0.3s ease;
-  margin-top: 10px;
-}
-
-.moonburger-button:hover {
-  background: linear-gradient(135deg, #fff700, #ffe135);
-  box-shadow: 0 0 30px #fff700, 0 0 60px #ffe135;
-  transform: scale(1.05);
-}
-
-/* Donate Section */
-.donate {
-  text-align: center;
-}
-
-/* Help Options */
-.help-container {
-  display: flex;
-  justify-content: center;
-  gap: 50px;
-  flex-wrap: wrap;
-}
-
-.help-option {
-  background: #1a1b3a;
-  padding: 30px;
-  border-radius: 20px;
-  width: 300px;
-  text-align: center;
-  box-shadow: 0 0 10px #ffcc00;
-}
-
-/* Partners Section */
-#partners ul {
-  list-style: none;
-  padding: 0;
-}
-
-#partners ul li {
-  margin-bottom: 10px;
-}
-
-#partners a {
+ul li a {
   color: #ffcc00;
   text-decoration: underline;
+  font-weight: bold;
 }
 
-#partners a:hover {
-  color: #ffe135;
-}
-
-/* Quote Section */
-.quote-section {
-  text-align: center;
-}
-
-/* Quiz Section */
-.quiz-section {
-  text-align: center;
-}
-
-#quiz-container {
-  margin-top: 30px;
-}
-
-.btn-grid {
-  display: grid;
-  gap: 10px;
-  margin: 20px 0;
-}
-
-/* Quiz buttons */
-.btn-grid button {
-  width: 100%;
-  padding: 10px;
-  border-radius: 10px;
-  background: #1a1b3a;
-  color: #fff;
-  border: 2px solid #ffcc00;
+/* Buttons */
+.styled-button, .action-button {
+  display: inline-block;
+  margin-top: 20px;
+  padding: 12px 24px;
+  border-radius: 30px;
+  border: none;
+  background: #ffcc00;
+  color: #333;
+  font-size: 1rem;
   cursor: pointer;
   transition: background 0.3s;
 }
 
-.btn-grid button:hover {
-  background: #ffcc00;
-  color: #0b0c28;
+.styled-button:hover, .action-button:hover {
+  background: #ff6b6b;
+  color: white;
 }
 
-/* Correct/Wrong Answers */
+/* Fact and Quote */
+.generator, .quote-section {
+  margin-top: 30px;
+}
+
+.highlight-text {
+  font-size: 1.5em;
+  margin: 10px 0;
+  color: #ff6b6b;
+}
+
+/* Take Action */
+.action-grid {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 30px;
+  margin-top: 30px;
+}
+
+.action-item {
+  background: #f9f9f9;
+  padding: 20px;
+  border-radius: 15px;
+  width: 300px;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.05);
+}
+
+.action-item h3 {
+  margin-bottom: 10px;
+}
+
+/* Quiz */
+.quiz-container {
+  max-width: 600px;
+  margin: 0 auto;
+}
+
+.quiz-question {
+  font-size: 1.2rem;
+  margin-bottom: 20px;
+}
+
+.quiz-answers {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.quiz-answers .btn {
+  padding: 10px;
+  border: 2px solid #ffcc00;
+  border-radius: 30px;
+  background: white;
+  cursor: pointer;
+  transition: background 0.3s, color 0.3s;
+}
+
+.quiz-answers .btn:hover {
+  background: #ffcc00;
+  color: #333;
+}
+
 .correct {
-  background-color: #4CAF50;
+  background-color: #4caf50 !important;
+  color: white !important;
 }
 
 .wrong {
-  background-color: #F44336;
+  background-color: #f44336 !important;
+  color: white !important;
 }
 
 /* Footer */
-footer {
+.footer {
+  background: #333;
+  color: white;
   text-align: center;
-  padding: 20px;
-  background: #0b0c28;
+  padding: 15px 0;
+  margin-top: 50px;
 }
 
-/* Fade Animations */
+/* Fade-In Animation */
 .fade-in {
   opacity: 1;
   transform: translateY(0);
-  transition: all 1s ease;
+  transition: opacity 1s ease-out, transform 1s ease-out;
 }
 
-.section:not(.fade-in) {
+.section {
   opacity: 0;
   transform: translateY(50px);
+}
+
+/* Fix for Navbar overlapping */
+.section:not(.hero) {
+  scroll-margin-top: 80px;
 }
