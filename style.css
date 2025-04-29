@@ -12,7 +12,7 @@ html {
 body {
   font-family: 'Poppins', sans-serif;
   line-height: 1.6;
-  background-color: #fefefe;
+  background-color: #fdfdfd;
   color: #333;
 }
 
@@ -20,7 +20,7 @@ body {
 nav {
   position: fixed;
   width: 100%;
-  background-color: #fff;
+  background-color: #ffffff;
   top: 0;
   left: 0;
   box-shadow: 0 2px 5px rgba(0,0,0,0.1);
@@ -55,37 +55,60 @@ nav ul li a:hover {
   text-align: center;
 }
 
+/* Hero Section */
 .hero {
-  background: linear-gradient(to right, #ffcc00, #ff6b6b);
+  background: linear-gradient(135deg, #ffcc00, #ff6b6b);
   color: white;
   padding-top: 120px;
 }
 
-.about, .facts, .action, .donate, .quote-section, .quiz-section {
-  background: #fff;
-  margin-top: 20px;
+/* About Section */
+.about {
+  background: #fff4cc;
 }
 
+/* Facts Section */
+.facts {
+  background: #ffe5e5;
+}
+
+.facts ul {
+  list-style: disc inside;
+}
+
+/* Take Action Section */
+.action {
+  background: #fff4cc;
+}
+
+/* Donate Section */
+.donate {
+  background: #ffe5e5;
+}
+
+/* Quote Section */
+.quote-section {
+  background: #fff4cc;
+}
+
+/* Quiz Section */
+.quiz-section {
+  background: #ffe5e5;
+}
+
+/* Headings */
 h1, h2 {
   margin-bottom: 20px;
 }
 
-ul {
-  list-style: none;
-  padding: 0;
-}
-
-ul li {
-  margin: 10px 0;
-}
-
+/* Links */
 ul li a {
   color: #ffcc00;
   text-decoration: underline;
   font-weight: bold;
 }
 
-/* Buttons */
+/* Buttons - Moon Burger Style */
 .styled-button, .action-button {
   display: inline-block;
   margin-top: 20px;
@@ -95,16 +118,19 @@ ul li a {
   background: #ffcc00;
   color: #333;
   font-size: 1rem;
+  font-weight: bold;
   cursor: pointer;
-  transition: background 0.3s;
+  transition: all 0.3s ease;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
 
 .styled-button:hover, .action-button:hover {
   background: #ff6b6b;
   color: white;
+  transform: scale(1.05);
 }
 
-/* Fact and Quote */
+/* Fact Generator and Quote */
 .generator, .quote-section {
   margin-top: 30px;
 }
@@ -115,7 +141,7 @@ ul li a {
   color: #ff6b6b;
 }
 
-/* Take Action */
+/* Take Action Grid */
 .action-grid {
   display: flex;
   flex-wrap: wrap;
@@ -125,7 +151,7 @@ ul li a {
 }
 
 .action-item {
-  background: #f9f9f9;
+  background: #fff;
   padding: 20px;
   border-radius: 15px;
   width: 300px;
@@ -151,6 +177,7 @@ ul li a {
   display: flex;
   flex-direction: column;
   gap: 10px;
+  margin-top: 20px;
 }
 
 .quiz-answers .btn {
@@ -159,6 +186,7 @@ ul li a {
   border-radius: 30px;
   background: white;
   cursor: pointer;
+  font-weight: bold;
   transition: background 0.3s, color 0.3s;
 }
 
@@ -167,6 +195,7 @@ ul li a {
   color: #333;
 }
 
+/* Correct and Wrong Answers */
 .correct {
   background-color: #4caf50 !important;
   color: white !important;
@@ -186,19 +215,7 @@ ul li a {
   margin-top: 50px;
 }
 
-/* Fade-In Animation */
-.fade-in {
-  opacity: 1;
-  transform: translateY(0);
-  transition: opacity 1s ease-out, transform 1s ease-out;
-}
-
-.section {
-  opacity: 0;
-  transform: translateY(50px);
-}
-
-/* Fix for Navbar overlapping */
+/* Scroll margin */
 .section:not(.hero) {
   scroll-margin-top: 80px;
 }
