@@ -15,24 +15,23 @@
             <li><a href="#facts">Facts</a></li>
             <li><a href="#take-action">Take Action</a></li>
             <li><a href="#donate">Donate</a></li>
-            <li><a href="#quiz">Quiz</a></li> <!-- Added Quiz Link -->
         </ul>
     </nav>
 
     <!-- Hero Section -->
-    <header id="home" class="hero">
+    <header id="home" class="hero section">
         <h1>🌍 Join the Fight Against Hunger</h1>
         <p>Every action counts in ending hunger worldwide. Be the change! 💪</p>
     </header>
 
     <!-- About Section -->
-    <section id="about" class="about">
+    <section id="about" class="about section">
         <h2>What is Hunger Awareness?</h2>
         <p>Hunger is a global issue affecting millions of lives. We're working to raise awareness and end this crisis. Learn more about the causes and solutions.</p>
     </section>
 
     <!-- Facts Section -->
-    <section id="facts" class="facts">
+    <section id="facts" class="facts section">
         <h2>Shocking Hunger Statistics</h2>
         <ul>
             <li>Over 800 million people suffer from hunger every night.</li>
@@ -45,50 +44,61 @@
         <div id="fact-generator" style="margin-top: 20px;">
             <p><strong>Did you know...?</strong></p>
             <p id="random-fact" style="font-size: 1.5em; color: #ffcc00;">Click to get a fact!</p>
-            <button onclick="generateFact()">Click to get a fact</button>
+            <button class="moonburger-button" onclick="generateFact()">Click to get a fact</button>
         </div>
     </section>
 
     <!-- Take Action Section -->
-    <section id="take-action" class="action">
+    <section id="take-action" class="action section">
         <h2>How You Can Help</h2>
-        <p>By donating, volunteering, and spreading awareness, we can fight hunger together!</p>
+        <div class="help-container">
+            <div class="help-option">
+                <h3>Volunteer</h3>
+                <p>Give your time to support hunger relief efforts.</p>
+                <a href="https://www.feedingamerica.org/take-action/volunteer" target="_blank" class="moonburger-button">Find Volunteer Opportunities</a>
+            </div>
+            <div class="help-option">
+                <h3>Donate</h3>
+                <p>Support organizations working to end hunger.</p>
+                <a href="https://www.actionagainsthunger.org/donate" target="_blank" class="moonburger-button">Make a Donation</a>
+            </div>
+        </div>
     </section>
 
     <!-- Donate Section -->
-    <section id="donate" class="donate">
+    <section id="donate" class="donate section">
         <h2>Donate to Help Fight Hunger</h2>
         <p>Your contributions go towards feeding those in need and supporting sustainable solutions.</p>
-        <button class="cta-button">Donate Now</button>
+        <button class="moonburger-button">Donate Now</button>
     </section>
 
     <!-- Charities and Partners Section -->
-    <section id="partners">
+    <section id="partners" class="section">
         <h2>Charities and Food Partners</h2>
         <p>Here are some amazing organizations working towards ending hunger:</p>
         <ul>
-            <li><a href="https://www.feedingamerica.org" target="_blank" style="text-decoration: underline; color: #ffcc00;">Feeding America</a></li>
-            <li><a href="https://www.wfp.org" target="_blank" style="text-decoration: underline; color: #ffcc00;">World Food Programme</a></li>
-            <li><a href="https://www.fmsc.org" target="_blank" style="text-decoration: underline; color: #ffcc00;">Feed My Starving Children</a></li>
-            <li><a href="https://www.actionagainsthunger.org" target="_blank" style="text-decoration: underline; color: #ffcc00;">Action Against Hunger</a></li>
-            <li><a href="https://www.worldvision.org" target="_blank" style="text-decoration: underline; color: #ffcc00;">World Vision</a></li>
+            <li><a href="https://www.feedingamerica.org" target="_blank">Feeding America</a></li>
+            <li><a href="https://www.wfp.org" target="_blank">World Food Programme</a></li>
+            <li><a href="https://www.fmsc.org" target="_blank">Feed My Starving Children</a></li>
+            <li><a href="https://www.actionagainsthunger.org" target="_blank">Action Against Hunger</a></li>
+            <li><a href="https://www.worldvision.org" target="_blank">World Vision</a></li>
         </ul>
     </section>
 
     <!-- Random Quote Section -->
-    <section class="quote-section">
+    <section class="quote-section section">
         <h2>Motivational Quote</h2>
         <p id="quote">Loading a quote...</p>
-        <button onclick="showRandomQuote()">Show New Quote</button>
+        <button class="moonburger-button" onclick="showRandomQuote()">Show New Quote</button>
     </section>
 
     <!-- Quiz Section -->
-    <section id="quiz" class="quiz-section">
-        <h2>Test Your Knowledge</h2>
+    <section id="quiz" class="quiz-section section">
+        <h2>Test Your Knowledge!</h2>
         <div id="quiz-container">
-            <h3 id="question">Question text will appear here</h3>
-            <div id="answer-buttons" class="answer-buttons"></div>
-            <button id="next-btn" class="next-btn">Next</button>
+            <h3 id="question">Question goes here</h3>
+            <div id="answer-buttons" class="btn-grid"></div>
+            <button id="next-btn" class="moonburger-button">Next</button>
         </div>
     </section>
 
