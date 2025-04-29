@@ -1,112 +1,105 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Hunger Awareness - Home</title>
-    <link rel="stylesheet" href="style.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Hunger Awareness - Home</title>
+  <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <!-- Navigation Bar -->
-    <nav>
-        <ul>
-            <li><a href="#home">Home</a></li>
-            <li><a href="#about">About</a></li>
-            <li><a href="#facts">Facts</a></li>
-            <li><a href="#take-action">Take Action</a></li>
-            <li><a href="#donate">Donate</a></li>
-        </ul>
-    </nav>
 
-    <!-- Hero Section -->
-    <header id="home" class="hero section">
-        <h1>🌍 Join the Fight Against Hunger</h1>
-        <p>Every action counts in ending hunger worldwide. Be the change! 💪</p>
-    </header>
+<!-- Navigation -->
+<nav>
+  <ul>
+    <li><a href="#home">Home</a></li>
+    <li><a href="#about">About</a></li>
+    <li><a href="#facts">Facts</a></li>
+    <li><a href="#take-action">Take Action</a></li>
+    <li><a href="#donate">Donate</a></li>
+  </ul>
+</nav>
 
-    <!-- About Section -->
-    <section id="about" class="about section">
-        <h2>What is Hunger Awareness?</h2>
-        <p>Hunger is a global issue affecting millions of lives. We're working to raise awareness and end this crisis. Learn more about the causes and solutions.</p>
-    </section>
+<!-- Hero Section -->
+<header id="home" class="section hero">
+  <h1>🌍 Join the Fight Against Hunger</h1>
+  <p>Every action counts in ending hunger worldwide. Be the change! 💪</p>
+</header>
 
-    <!-- Facts Section -->
-    <section id="facts" class="facts section">
-        <h2>Shocking Hunger Statistics</h2>
-        <ul>
-            <li>Over 800 million people suffer from hunger every night.</li>
-            <li>1 in 9 people globally experience hunger.</li>
-            <li>Children under 5 are the most vulnerable to malnutrition.</li>
-            <li>A staggering number of people in developed nations still live in food insecurity.</li>
-            <li>The world produces enough food to feed the global population, yet hunger persists.</li>
-        </ul>
+<!-- About Section -->
+<section id="about" class="section about">
+  <h2>What is Hunger Awareness?</h2>
+  <p>Hunger affects millions globally. We're raising awareness and fighting this crisis. Learn how you can help.</p>
+</section>
 
-        <div id="fact-generator" style="margin-top: 20px;">
-            <p><strong>Did you know...?</strong></p>
-            <p id="random-fact" style="font-size: 1.5em; color: #ffcc00;">Click to get a fact!</p>
-            <button class="moonburger-button" onclick="generateFact()">Click to get a fact</button>
-        </div>
-    </section>
+<!-- Facts Section -->
+<section id="facts" class="section facts">
+  <h2>Shocking Hunger Statistics</h2>
+  <ul>
+    <li>Over 800 million people suffer from hunger every night.</li>
+    <li>1 in 9 people globally experience hunger.</li>
+    <li>Children under 5 are the most vulnerable to malnutrition.</li>
+    <li>Food insecurity exists even in wealthy nations.</li>
+    <li>The world produces enough food to feed everyone — yet hunger persists.</li>
+  </ul>
 
-    <!-- Take Action Section -->
-    <section id="take-action" class="action section">
-        <h2>How You Can Help</h2>
-        <div class="help-container">
-            <div class="help-option">
-                <h3>Volunteer</h3>
-                <p>Give your time to support hunger relief efforts.</p>
-                <a href="https://www.feedingamerica.org/take-action/volunteer" target="_blank" class="moonburger-button">Find Volunteer Opportunities</a>
-            </div>
-            <div class="help-option">
-                <h3>Donate</h3>
-                <p>Support organizations working to end hunger.</p>
-                <a href="https://www.actionagainsthunger.org/donate" target="_blank" class="moonburger-button">Make a Donation</a>
-            </div>
-        </div>
-    </section>
+  <div id="fact-generator" class="generator">
+    <p><strong>Did you know...?</strong></p>
+    <p id="random-fact" class="highlight-text">Click below to get a fact!</p>
+    <button class="styled-button" onclick="generateFact()">Click to Get a Fact</button>
+  </div>
+</section>
 
-    <!-- Donate Section -->
-    <section id="donate" class="donate section">
-        <h2>Donate to Help Fight Hunger</h2>
-        <p>Your contributions go towards feeding those in need and supporting sustainable solutions.</p>
-        <button class="moonburger-button">Donate Now</button>
-    </section>
+<!-- Take Action Section -->
+<section id="take-action" class="section action">
+  <h2>How You Can Help</h2>
+  <div class="action-grid">
+    <div class="action-item">
+      <h3>Volunteer</h3>
+      <p>Make a difference by helping at food banks and local charities.</p>
+      <a href="https://www.feedingamerica.org/ways-to-give/volunteer" target="_blank" class="action-button">Volunteer</a>
+    </div>
+    <div class="action-item">
+      <h3>Donate</h3>
+      <p>Your contributions directly help feed hungry families around the world.</p>
+      <a href="#donate" class="action-button">Donate</a>
+    </div>
+  </div>
+</section>
 
-    <!-- Charities and Partners Section -->
-    <section id="partners" class="section">
-        <h2>Charities and Food Partners</h2>
-        <p>Here are some amazing organizations working towards ending hunger:</p>
-        <ul>
-            <li><a href="https://www.feedingamerica.org" target="_blank">Feeding America</a></li>
-            <li><a href="https://www.wfp.org" target="_blank">World Food Programme</a></li>
-            <li><a href="https://www.fmsc.org" target="_blank">Feed My Starving Children</a></li>
-            <li><a href="https://www.actionagainsthunger.org" target="_blank">Action Against Hunger</a></li>
-            <li><a href="https://www.worldvision.org" target="_blank">World Vision</a></li>
-        </ul>
-    </section>
+<!-- Donate Section -->
+<section id="donate" class="section donate">
+  <h2>Charities to Support</h2>
+  <ul>
+    <li><a href="https://www.feedingamerica.org" target="_blank">Feeding America</a></li>
+    <li><a href="https://www.wfp.org" target="_blank">World Food Programme</a></li>
+    <li><a href="https://www.fmsc.org" target="_blank">Feed My Starving Children</a></li>
+    <li><a href="https://www.actionagainsthunger.org" target="_blank">Action Against Hunger</a></li>
+    <li><a href="https://www.worldvision.org" target="_blank">World Vision</a></li>
+  </ul>
+</section>
 
-    <!-- Random Quote Section -->
-    <section class="quote-section section">
-        <h2>Motivational Quote</h2>
-        <p id="quote">Loading a quote...</p>
-        <button class="moonburger-button" onclick="showRandomQuote()">Show New Quote</button>
-    </section>
+<!-- Quote Section -->
+<section class="section quote-section">
+  <h2>Motivational Quote</h2>
+  <p id="quote">Loading a quote...</p>
+  <button class="styled-button" onclick="showRandomQuote()">Show New Quote</button>
+</section>
 
-    <!-- Quiz Section -->
-    <section id="quiz" class="quiz-section section">
-        <h2>Test Your Knowledge!</h2>
-        <div id="quiz-container">
-            <h3 id="question">Question goes here</h3>
-            <div id="answer-buttons" class="btn-grid"></div>
-            <button id="next-btn" class="moonburger-button">Next</button>
-        </div>
-    </section>
+<!-- Quiz Section -->
+<section class="section quiz-section">
+  <h2>Test Your Knowledge!</h2>
+  <div class="quiz-container">
+    <div id="question" class="quiz-question">Loading question...</div>
+    <div id="answer-buttons" class="quiz-answers"></div>
+    <button id="next-btn" class="styled-button">Next</button>
+  </div>
+</section>
 
-    <!-- Footer -->
-    <footer>
-        <p>&copy; 2025 Hunger Awareness. All rights reserved.</p>
-    </footer>
+<!-- Footer -->
+<footer class="footer">
+  <p>&copy; 2025 Hunger Awareness. All rights reserved.</p>
+</footer>
 
-    <script src="homepage.js"></script>
+<script src="homepage.js"></script>
 </body>
 </html>
