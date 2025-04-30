@@ -36,7 +36,8 @@ nav ul li a {
   text-decoration: none;
   font-size: 1.2em;
   position: relative;
-  transition: color 0.3s;
+  transition: color 0.3s, transform 0.3s ease-in-out;
+  display: inline-block;
 }
 
 nav ul li a::after {
@@ -52,6 +53,7 @@ nav ul li a::after {
 
 nav ul li a:hover {
   color: #ffffff;
+  transform: scale(1.05);
 }
 
 nav ul li a:hover::after {
@@ -113,11 +115,12 @@ section p, section ul {
   font-size: 1em;
   border-radius: 30px;
   cursor: pointer;
-  transition: 0.3s;
+  transition: background 0.3s, transform 0.3s ease-in-out;
 }
 
 #fact-generator button:hover {
   background: #fff700;
+  transform: scale(1.05);
 }
 
 /* Quiz Styles */
@@ -150,12 +153,13 @@ section p, section ul {
   background: transparent;
   color: #ffcc00;
   cursor: pointer;
-  transition: background 0.3s, color 0.3s;
+  transition: background 0.3s, color 0.3s, transform 0.3s ease-in-out;
 }
 
 .btn:hover {
   background: #ffcc00;
   color: #0b0c28;
+  transform: scale(1.05);
 }
 
 /* Correct and Wrong */
@@ -179,11 +183,12 @@ section p, section ul {
   cursor: pointer;
   display: none;
   margin-top: 20px;
-  transition: background 0.3s;
+  transition: background 0.3s, transform 0.3s ease-in-out;
 }
 
 #next-btn:hover {
   background: #fff700;
+  transform: scale(1.05);
 }
 
 /* Partners list */
@@ -200,10 +205,13 @@ section p, section ul {
   text-decoration: underline;
   color: #ffcc00;
   font-size: 1.1em;
+  transition: color 0.3s, transform 0.3s ease-in-out;
+  display: inline-block;
 }
 
 #partners a:hover {
   color: #ffffff;
+  transform: scale(1.05);
 }
 
 /* Footer */
@@ -227,4 +235,3 @@ footer {
   opacity: 0;
   transform: translateY(50px);
 }
-
